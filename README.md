@@ -11,6 +11,18 @@ R Markdown.
 ## Installation
 
 You can install Postcards with the following command:
+## Usage Example
+
+After installation, you can create your first postcard website with:
+
+```r
+library(postcards)
+
+# Create a postcard using the "jolla" template
+postcards::create_postcard(template = "jolla")
+
+# Render the postcard into index.html
+rmarkdown::render("index.Rmd")
 
 ``` r
 install.packages("postcards")
